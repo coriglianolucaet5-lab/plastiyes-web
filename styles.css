@@ -1,0 +1,419 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #6122d7;
+
+    color: rgb(255, 250, 250);
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1{
+    font-size: 1.8rem;
+}
+
+.logo p{
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+    font-weight: 500;
+
+    position: relative;
+}
+
+nav a:hover{
+    color: #ccc;
+}
+
+nav a::after{
+    content: "";
+
+    width: 0;
+    height: 2px;
+
+    background-color: #4CAF50;
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    transition: 0.3s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+section{
+    padding: 60px 20px;
+}
+
+section{
+    padding: 60px 20px;
+}
+
+#inicio,
+#productos,
+#nosotros,
+#reseñas,
+#contacto{
+    scroll-margin-top: 100px;
+}
+
+footer{
+    background-color: #140d48;
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.footer-contenido{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+}
+
+.footer-contenido ul{
+    list-style: none;
+}
+
+.footer-contenido a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contenido li{
+    margin-bottom: 8px;
+}
+
+.copyright{
+    text-align: center;
+    border-top: 1px solid #4CAF50;
+    padding-top: 20px;
+}
+
+#productos{
+    background-color: #4a3cb8;
+}
+
+#productos h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.contenedor-productos{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3{
+    padding: 15px 15px 10px;
+    font-size: 1.4rem;
+}
+
+.card p{
+    padding: 0 15px 20px;
+    font-weight: 500;
+}
+
+.card a{
+    display: block;
+    margin: 0 15px 15px;
+    background-color: #7d05e0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.card a:hover{
+    background-color: #388E3C;
+}
+
+#inicio{
+    height: 90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('img/maquina.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.contenido-inicio{
+    max-width: 700px;
+}
+
+.contenido-inicio h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contenido-inicio p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contenido-inicio a{
+    background-color: white;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#reseñas{
+    background-color: #140d48;
+    color: white;
+}
+
+#reseñas h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.grid-reseñas{
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.reseña{
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+#contacto{
+    background-color: #a079f5;
+}
+
+#contacto h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.contenedor-contacto{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 100%;
+    max-width: 500px;
+}
+
+input,
+textarea{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-family: inherit;
+}
+
+textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+button{
+    background-color: #6122d7;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.info-contacto{
+    max-width: 300px;
+}
+
+.info-contacto h3{
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        position: static;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contenido-inicio h2{
+        font-size: 2rem;
+    }
+
+    .contenido-inicio p{
+        font-size: 1rem;
+    }
+
+    .contenedor-productos{
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .contenedor-contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form{
+        max-width: 100%;
+    }
+
+    .info-contacto{
+        text-align: center;
+    }
+}
+
+#nosotros{
+    background-color: rgb(160, 136, 238);
+}
+
+.contenido-nosotros{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.texto-nosotros{
+    max-width: 500px;
+}
+
+.texto-nosotros h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.texto-nosotros p{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.contenido-nosotros img{
+    width: 400px;
+    border-radius: 12px;
+}
+
+.medidas{
+    padding: 0 30px 20px;
+}
+
+.medidas li{
+    margin-bottom: 5px;
+}
+
