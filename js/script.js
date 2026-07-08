@@ -1,4 +1,4 @@
-const API_URL = 'productos.json';
+const API_URL = 'https://coriglianolucaet5-lab.github.io/plastiyes-web/productos.json';
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
