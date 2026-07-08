@@ -96,15 +96,12 @@ section{
     padding: 60px 20px;
 }
 
-section{
-    padding: 60px 20px;
-}
-
 #inicio,
 #productos,
 #nosotros,
 #reseñas,
-#contacto{
+#contacto,
+#ver-carrito{
     scroll-margin-top: 100px;
 }
 
@@ -415,5 +412,223 @@ button{
 
 .medidas li{
     margin-bottom: 5px;
+}
+
+.seccion-carrito{
+    background-color: #2a1a6e;
+    color: white;
+    min-height: 300px;
+}
+
+.seccion-carrito h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.carrito-vacio{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+#carrito-contenedor{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.item-carrito{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #3d28a0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.item-carrito img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-carrito .item-info{
+    flex: 1;
+    min-width: 120px;
+}
+
+.item-carrito .item-nombre{
+    font-weight: 600;
+}
+
+.item-carrito .item-precio{
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.item-carrito .item-cantidad{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.item-carrito .item-cantidad button{
+    background-color: #6122d7;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.item-carrito .item-cantidad span{
+    font-size: 1.1rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+.item-carrito .btn-eliminar{
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrito-total{
+    max-width: 800px;
+    margin: 20px auto 0;
+    text-align: right;
+}
+
+.carrito-total p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.carrito-total button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#vaciar-carrito{
+    background-color: #555;
+    color: white;
+}
+
+#finalizar-compra{
+    background-color: #4CAF50;
+    color: white;
+}
+
+#cart-link{
+    font-size: 1.1rem;
+}
+
+#cart-count{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    margin-left: 3px;
+}
+
+.notificacion{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    z-index: 9999;
+    animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut{
+    0%{ opacity: 0; transform: translateY(-20px); }
+    20%{ opacity: 1; transform: translateY(0); }
+    80%{ opacity: 1; }
+    100%{ opacity: 0; transform: translateY(-20px); }
+}
+
+.modal-compra{
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+}
+
+.modal-compra-contenido{
+    background-color: white;
+    color: #333;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.modal-compra-contenido h3{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.modal-compra-contenido p{
+    margin-bottom: 20px;
+}
+
+.modal-compra-contenido button{
+    background-color: #6122d7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.producto-precio{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4CAF50;
+    padding: 0 15px 10px;
+}
+
+.btn-agregar{
+    display: block;
+    margin: 0 15px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.btn-agregar:hover{
+    background-color: #388E3C;
 }
 

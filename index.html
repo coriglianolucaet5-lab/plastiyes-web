@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plastiyes</title>
+    <meta name="description" content="Plastiyes - Fabricación y distribución de bolsas de consorcio en Trujui, Moreno. Ventas mayoristas y minoristas.">
+    <meta name="keywords" content="bolsas de consorcio, bolsas negras, plastiyes, Trujui, Moreno, venta de bolsas">
+    <meta name="author" content="Plastiyes">
+    <title>Plastiyes - Bolsas de Consorcio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -27,6 +33,7 @@
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#reseñas">Reseñas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ver-carrito" id="cart-link">🛒 <span id="cart-count">0</span></a></li>
             </ul>
         </nav>
     </header>
@@ -52,86 +59,24 @@
 
         <h2>Productos</h2>
 
-        <div class="contenedor-productos">
+        <div class="contenedor-productos" id="productos-container">
+        </div>
 
-            <div class="card">
+        </section>
 
-                <img
-                src="img/bolsasCaramelo.jpg"
-                alt="Bolsa Caramelo">
+        <section id="ver-carrito" class="seccion-carrito">
 
-                <h3>Bolsa Caramelo</h3>
+            <h2>Tu Carrito</h2>
 
-                <p>Medidas disponibles:</p>
-
-                <ul class="medidas">
-                    <li>80x100</li>
-                    <li>80x110</li>
-                    <li>80x120</li>
-                    <li>90x110</li>
-                    <li>90x120</li>
-                </ul>
-
-                <a
-                href="https://wa.me/5491121775076?text=Hola,%20quiero%20consultar%20por%20las%20bolsas%20negras"
-                target="_blank"
-                >
-                    Consultar
-                </a>
+            <div id="carrito-contenedor">
+                <p class="carrito-vacio">El carrito está vacío</p>
             </div>
 
-                <div class="card">
-
-        <img
-        src="img/bolsasNegras.jpg"
-        alt="Bolsa Negra">
-
-        <h3>Bolsa Negra</h3>
-
-        <p>Medidas disponibles:</p>
-
-        <ul class="medidas">
-            <li>80x100</li>
-            <li>80x110</li>
-            <li>80x120</li>
-            <li>90x110</li>
-            <li>90x120</li>
-        </ul>
-
-        <a
-        href="https://wa.me/5491121775076?text=Hola,%20quiero%20consultar%20por%20las%20bolsas%20negras"
-        target="_blank"
-        >
-            Consultar
-        </a>
-
-    </div>
-            <div class="card">
-
-                <img
-                src="img/bolsasVerdes.jpg"
-                alt="Bolsa Verde">
-
-                <h3>Bolsa Verde</h3>
-
-                <p>Medidas disponibles:</p>
-
-                <ul class="medidas">
-                    <li>80x100</li>
-                    <li>80x110</li>
-                    <li>80x120</li>
-                    <li>90x110</li>
-                    <li>90x120</li>
-                </ul>
-
-                <a
-                href="https://wa.me/5491121775076?text=Hola,%20quiero%20consultar%20por%20las%20bolsas%20negras"
-                target="_blank"
-                >
-                    Consultar
-                </a>
-                
-            </div>  
+            <div id="carrito-total-container" class="carrito-total" style="display:none;">
+                <p>Total: <span id="carrito-total">$0</span></p>
+                <button id="vaciar-carrito">Vaciar carrito</button>
+                <button id="finalizar-compra">Finalizar compra</button>
+            </div>
 
         </section>
 
@@ -161,8 +106,6 @@
                 >
 
             </div>
-
-        </section>
 
         </section>
 
@@ -295,6 +238,7 @@
 </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

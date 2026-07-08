@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Bolsa Caramelo",
+        "precio": 5000,
+        "imagen": "img/bolsasCaramelo.jpg",
+        "medidas": ["80x100", "80x110", "80x120", "90x110", "90x120"]
+    },
+    {
+        "id": 2,
+        "nombre": "Bolsa Negra",
+        "precio": 4500,
+        "imagen": "img/bolsasNegras.jpg",
+        "medidas": ["80x100", "80x110", "80x120", "90x110", "90x120"]
+    },
+    {
+        "id": 3,
+        "nombre": "Bolsa Verde",
+        "precio": 4800,
+        "imagen": "img/bolsasVerdes.jpg",
+        "medidas": ["80x100", "80x110", "80x120", "90x110", "90x120"]
+    },
+    {
+        "id": 4,
+        "nombre": "Bolsa Consorcio 60x80",
+        "precio": 3500,
+        "imagen": "img/bolsaConsorcio60x80.jpg",
+        "medidas": ["60x80"]
+    },
+    {
+        "id": 5,
+        "nombre": "Bolsa Consorcio 100x120",
+        "precio": 6000,
+        "imagen": "img/bolsaConsorcio100x120.jpg",
+        "medidas": ["100x120"]
+    },
+    {
+        "id": 6,
+        "nombre": "Bolsa Azul",
+        "precio": 5000,
+        "imagen": "img/bolsaAzul.jpg",
+        "medidas": ["80x100", "80x110", "80x120", "90x110", "90x120"]
+    }
+]
