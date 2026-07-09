@@ -14,6 +14,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+:focus-visible{
+    outline: 3px solid #4CAF50;
+    outline-offset: 2px;
+}
+
 header{
     background-color: #6122d7;
 
